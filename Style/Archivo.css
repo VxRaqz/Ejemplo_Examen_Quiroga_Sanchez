@@ -1,0 +1,142 @@
+/* estilos.css */
+
+:root {
+  --color-fondo: #f8faff;
+  --color-principal: #a3d8f4; /* azul pastel */
+  --color-secundario: #f2b5d4; /* rosita pastel */
+  --color-acento: #c6bbf7; /* lila pastel */
+  --color-texto: #333;
+  --blanco: #fff;
+}
+
+/* reseteo básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-fondo);
+  font-family: "Poppins", Arial, sans-serif;
+  color: var(--color-texto);
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background: linear-gradient(90deg, var(--color-principal), var(--color-acento));
+  color: var(--blanco);
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/* Navegación (solo para index) */
+nav ul {
+  list-style: none;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav ul li {
+  background-color: var(--color-secundario);
+  border-radius: 12px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+
+nav ul li:hover {
+  transform: scale(1.05);
+  background-color: var(--color-acento);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Contenido principal */
+main {
+  background-color: var(--blanco);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+main h2 {
+  color: var(--color-acento);
+  margin-bottom: 10px;
+}
+
+main h3 {
+  color: var(--color-secundario);
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+p, ul, table {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: "✨ ";
+  padding-left: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th {
+  background-color: var(--color-principal);
+  color: #fff;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Imágenes */
+img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 25px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--color-acento);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
